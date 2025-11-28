@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seoul'd Out</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-dark">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">SEOUL’D OUT</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link nav-link--active">Home</a>
+        <a href="#reservations" class="nav-link">Reservations</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="#story" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO IMAGE -->
+  <section class="hero">
+    <div class="hero-image"
+         style="background-image: url('src/home/home.png');"
+>
+      <div class="hero-overlay"></div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- OUR STORY -->
+    <section id="story" class="section section-story">
+      <div class="container">
+        <h1 class="section-title">Our Story</h1>
+
+        <p class="section-body">
+          Seoul’dOut began with one idea: bring the taste and energy of real Korean barbecue to Los Angeles.
+        </p>
+        <p class="section-body">
+          We grew up around sizzling grills, shared plates, and late night meals with friends. Now we serve that same spirit with quality meats, fresh banchan, and a lively atmosphere that feels like home.
+        </p>
+        <p class="section-body">
+          Welcome to Seoul’dOut. Come hungry and leave happy.
+        </p>
+      </div>
+    </section>
+
+    <!-- IMAGE GRID -->
+    <section class="section section-gallery">
+    <div class="container gallery-grid">
+
+      <img src="src/home/1.png"  alt="KBBQ Image 1" class="gallery-item" />
+      <img src="src/home/2.png"  alt="KBBQ Image 2" class="gallery-item" />
+      <img src="src/home/3.png"  alt="KBBQ Image 3" class="gallery-item" />
+      <img src="src/home/4.png"  alt="KBBQ Image 4" class="gallery-item" />
+      <img src="src/home/5.png"  alt="KBBQ Image 5" class="gallery-item" />
+      <img src="src/home/6.png"  alt="KBBQ Image 6" class="gallery-item" />
+
+    </div>
+
+      <div class="gallery-cta">
+        <a href="#reservations" class="btn-primary">Reservations</a>
+      </div>
+    </section>
+
+    <!-- MAP + HOURS / RESERVATIONS SECTION -->
+    <section id="reservations" class="section section-location">
+      <div class="container location-grid">
+
+       <div class="location-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6610.43888814524!2d-118.30865568717535!3d34.06388847304064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b89b6826b067%3A0x41489f7f9f48a5e4!2s3821%20W%206th%20St%2C%20Los%20Angeles%2C%20CA%2090020!5e0!3m2!1sen!2sus!4v1763878237769!5m2!1sen!2sus"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:4px;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+
+        <div class="location-info">
+          <h2 class="section-subtitle">HOURS:</h2>
+
+          <dl class="hours-list">
+            <div class="hours-row">
+              <dt>Monday</dt><dd>11AM–12AM</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Tuesday</dt><dd>CLOSED</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Wednesday</dt><dd>11AM–12AM</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Thursday</dt><dd>11AM–12AM</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Friday</dt><dd>11AM–2AM</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Saturday</dt><dd>11AM–2AM</dd>
+            </div>
+            <div class="hours-row">
+              <dt>Sunday</dt><dd>11AM–12AM</dd>
+            </div>
+          </dl>
+
+          <p class="address">
+            3821 W 6th St, Los Angeles, CA 90020<br />
+            (213) 389-8777
+          </p>
+
+          <a href="#"
+             class="btn-primary">Reservations</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        Copyright 2025 Seoul’d Out. All Rights Reserved.
+      </p>
+      <div class="footer-socials">
+        <!-- icons only, as in your design -->
+        <a href="#" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="Yelp">
+          <i class="fab fa-yelp"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
