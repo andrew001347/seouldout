@@ -1,9 +1,3 @@
-/* RESET-ish */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 :root {
   --bg: #000000;
@@ -37,7 +31,6 @@ img {
   display: block;
 }
 
-/* CONTAINER */
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -45,7 +38,7 @@ img {
   padding: 0 1.5rem;
 }
 
-/* SECTIONS */
+
 .section {
   padding: 3rem 0;
 }
@@ -76,7 +69,6 @@ img {
 }
 
 
-/* BUTTONS */
 .btn-primary {
   display: inline-block;
   margin-top: 1.5rem;
@@ -91,7 +83,6 @@ img {
   text-transform: uppercase;
 }
 
-/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -155,7 +146,6 @@ img {
   background-color: var(--text-main);
 }
 
-/* HERO */
 .hero-image {
   position: relative;
   width: 100%;
@@ -170,7 +160,7 @@ img {
   background: linear-gradient(to bottom, #00000033, #000000);
 }
 
-/* GALLERY */
+
 .section-gallery {
   padding-top: 1rem;
 }
@@ -192,7 +182,6 @@ img {
   margin-top: 2.5rem;
 }
 
-/* LOCATION / HOURS */
 .section-location {
   padding-top: 2.5rem;
   padding-bottom: 3.5rem;
@@ -235,8 +224,7 @@ img {
   line-height: 1.6;
 }
 
-/* MENU PAGE */
-/* MENU PAGE */
+
 .menu-page .section-menu-header {
   padding-bottom: 1.5rem;
 }
@@ -248,13 +236,13 @@ img {
   gap: 1rem;
 }
 
-/* MOBILE DROPDOWN – hidden on desktop */
+
 .menu-select {
   display: none;
   position: relative;
 }
 
-/* Button style (we'll reuse on mobile) */
+
 .menu-select-button {
   background: transparent;
   border: 1px solid var(--accent);
@@ -273,7 +261,7 @@ img {
   font-size: 0.7rem;
 }
 
-/* Desktop anchor row */
+
 .menu-anchor-links {
   margin-top: 1.5rem;
   display: flex;
@@ -294,7 +282,7 @@ img {
   color: var(--accent);
 }
 
-/* Always show all sections */
+
 .menu-category {
   margin-bottom: 3rem;
 }
@@ -353,7 +341,7 @@ img {
   margin-top: 0.5rem;
 }
 
-/* Base dropdown list styles (hidden by default) */
+
 .mobile-menu-list {
   display: none;
   background: #000;
@@ -377,7 +365,7 @@ img {
 }
 
 
-/* FOOTER */
+
 .site-footer {
   background-color: var(--bg-footer);
   padding: 1.2rem 0;
