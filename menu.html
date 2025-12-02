@@ -6,196 +6,217 @@
   <title>Menu | Seoul'd Out</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="theme-dark menu-page">
 
-  <header class="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="brand">SEOUL’D OUT</a>
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">SEOUL’D OUT</a>
 
-      <nav class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#reservations" class="nav-link">Reservations</a>
-        <a href="menu.html" class="nav-link nav-link--active">Menu</a>
-        <a href="index.html#story" class="nav-link">About Us</a>
-        <a href="index.html#contact" class="nav-link">Contact</a>
-      </nav>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#reservations" class="nav-link">Reservations</a>
+      <a href="menu.html" class="nav-link nav-link--active">Menu</a>
+      <a href="index.html#story" class="nav-link">About Us</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+    </nav>
 
-      <button class="nav-toggle">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
+    <button class="nav-toggle">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-image" style="background-image: url('src/home/home.png');">
+    <div class="hero-overlay"></div>
+  </div>
+</section>
+
+<section class="section section-menu-header">
+  <div class="container">
+
+    <div class="menu-header-block">
+      <h1 class="section-title">Menu</h1>
+
+      <p class="menu-welcome">
+        Thank you for joining us at Seoul'd Out. Take a moment to browse through
+        our selection; each dish is prepared with care and crafted to offer a
+        memorable experience.
+      </p>
     </div>
-  </header>
 
-    <section class="hero">
-    <div class="hero-image"
-         style="background-image: url('src/home/home.png');"
->
-      <div class="hero-overlay"></div>
+    <div class="menu-anchor-links">
+      <button data-tab="beef">🔥 FIRE KISSED BEEF</button>
+      <button data-tab="pork">🔥 SIZZLE PORK</button>
+      <button data-tab="chicken">🔥 CHARRED CHICKEN</button>
+      <button data-tab="sides">🔥 SEOUL SIDEKICKS</button>
+      <button data-tab="drinks">🔥 DRINKS</button>
     </div>
-  </section>
+
+  </div>
+</section>
 
 
-  <section class="section section-menu-header">
-    <div class="container">
+<section class="section section-menu-content">
+  <div class="container">
 
-      <div class="menu-title-row">
-        <h1 class="section-title">Menu</h1>
+    <!-- BEEF -->
+    <article id="beef" class="menu-tab">
+      <h2>🔥 Fire Kissed Beef</h2>
+      <div class="grid">
 
-        <div class="menu-select">
-          <button class="menu-select-button" id="mobileMenuButton">
-            Menu <span class="menu-select-icon">&#9662;</span>
-          </button>
-
-          
-          <ul class="mobile-menu-list">
-            <li><a href="#beef">🔥 Fire Kissed Beef</a></li>
-            <li><a href="#pork">🔥 Sizzle Pork</a></li>
-            <li><a href="#chicken">🔥 Charred Chicken</a></li>
-            <li><a href="#sides">🔥 Seoul Sidekicks</a></li>
-            <li><a href="#drinks">🔥 Drinks</a></li>
-          </ul>
+        <div class="grid-item">
+          <img src="src/beef/brisket.png" alt="Beef Brisket">
+          <p class="grid-caption">Beef Brisket</p>
         </div>
+
+        <div class="grid-item">
+          <img src="src/beef/belly.png" alt="Beef Belly">
+          <p class="grid-caption">Beef Belly</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/beef/bulgogi.png" alt="Bulgogi">
+          <p class="grid-caption">Bulgogi</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/beef/rib.png" alt="Short Rib">
+          <p class="grid-caption">Short Rib</p>
+        </div>
+
       </div>
+    </article>
 
-      
-      <div class="menu-anchor-links">
-        <a href="#beef">🔥 FIRE KISSED BEEF</a>
-        <a href="#pork">🔥 SIZZLE PORK</a>
-        <a href="#chicken">🔥 CHARRED CHICKEN</a>
-        <a href="#sides">🔥 SEOUL SIDEKICKS</a>
-        <a href="#drinks">🔥 DRINKS</a>
+
+    <!-- PORK -->
+    <article id="pork" class="menu-tab" style="display:none">
+      <h2>🔥 Sizzle Pork</h2>
+      <div class="grid">
+
+        <div class="grid-item">
+          <img src="src/pork/belly.png" alt="Pork Belly">
+          <p class="grid-caption">Pork Belly</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/pork/jowl.png" alt="Pork Jowl">
+          <p class="grid-caption">Pork Jowl</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/pork/porkbul.png" alt="Marinated Pork">
+          <p class="grid-caption">Marinated Pork</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/pork/smoked.png" alt="Smoked Pork">
+          <p class="grid-caption">Smoked Pork</p>
+        </div>
+
       </div>
-
-    </div>
-  </section>
+    </article>
 
 
-  <section class="section section-menu-content">
-    <div class="container">
+    <!-- CHICKEN -->
+    <article id="chicken" class="menu-tab" style="display:none">
+      <h2>🔥 Charred Chicken</h2>
+      <div class="grid">
 
-<article id="beef" class="menu-category">
-  <h2 class="menu-category-title">🔥 Fire Kissed Beef</h2>
+        <div class="grid-item">
+          <img src="src/chicken/teriyaki.png" alt="Teriyaki Chicken">
+          <p class="grid-caption">Teriyaki Chicken</p>
+        </div>
 
-  <div class="menu-card">
-    <div class="menu-image-wrapper">
-      <button class="slider-arrow slider-arrow--left">&lt;</button>
+        <div class="grid-item">
+          <img src="src/chicken/wings.png" alt="Chicken Wings">
+          <p class="grid-caption">Chicken Wings</p>
+        </div>
 
-      <img 
-        src="src/beef/brisket.png" 
-        alt="Beef" 
-        class="menu-image"
-        data-category="beef"
-      />
+        <div class="grid-item">
+          <img src="src/chicken/spicy.png" alt="Chicken Poppers">
+          <p class="grid-caption">Chicken Poppers</p>
+        </div>
+
+      </div>
+    </article>
 
 
-      <button class="slider-arrow slider-arrow--right">&gt;</button>
-    </div>
-    <p class="menu-image-caption">Beef Brisket</p>
+    <!-- SIDES -->
+    <article id="sides" class="menu-tab" style="display:none">
+      <h2>🔥 Seoul Sidekicks</h2>
+      <div class="grid">
+
+        <div class="grid-item">
+          <img src="src/sides/egg.png" alt="Steamed Egg">
+          <p class="grid-caption">Steamed Egg</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/sides/tofu.png" alt="Spicy Tofu Soup">
+          <p class="grid-caption">Spicy Tofu Soup</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/sides/bean.png" alt="Bean Paste Soup">
+          <p class="grid-caption">Bean Paste Soup</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/sides/salad.png" alt="Sangchu Geotjeori">
+          <p class="grid-caption">Sangchu Geotjeori</p>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- DRINKS -->
+    <article id="drinks" class="menu-tab" style="display:none">
+      <h2>🔥 Drinks</h2>
+      <div class="grid">
+
+        <div class="grid-item">
+          <img src="src/drinks/soda.png" alt="Soft Drinks">
+          <p class="grid-caption">Soft Drinks</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/drinks/beer.png" alt="Beer">
+          <p class="grid-caption">Beer</p>
+        </div>
+
+        <div class="grid-item">
+          <img src="src/drinks/soju.png" alt="Soju">
+          <p class="grid-caption">Soju</p>
+        </div>
+
+      </div>
+    </article>
+
   </div>
-</article>
+</section>
 
 
+<footer class="site-footer" id="contact">
+  <div class="container footer-inner">
+    <p class="footer-copy">
+      Copyright 2025 Seoul’d Out. All Rights Reserved. This is only a student project.
+    </p>
 
-  <article id="pork" class="menu-category">
-  <h2 class="menu-category-title">🔥 Sizzle Pork</h2>
-
-  <div class="menu-card">
-    <div class="menu-image-wrapper">
-      <button class="slider-arrow slider-arrow--left">&lt;</button>
-
-      
-        <img 
-        src="src/pork/belly.png" 
-        alt="Pork" 
-        class="menu-image"
-        data-category="pork"
-        />
-
-      <button class="slider-arrow slider-arrow--right">&gt;</button>
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-yelp"></i></a>
     </div>
-    <p class="menu-image-caption">Pork Belly</p>
   </div>
-</article>
+</footer>
 
-
-
-  <article id="chicken" class="menu-category">
-  <h2 class="menu-category-title">🔥 Charred Chicken</h2>
-
-  <div class="menu-card">
-    <div class="menu-image-wrapper">
-      <button class="slider-arrow slider-arrow--left">&lt;</button>
-
-        <img 
-        src="src/chicken/teriyaki.png" 
-        alt="Chicken" 
-        class="menu-image"
-        data-category="chicken"
-        />
-      
-
-      <button class="slider-arrow slider-arrow--right">&gt;</button>
-    </div>
-    <p class="menu-image-caption">Teriyaki Chicken</p>
-  </div>
-</article>
-
-
-
-<article id="sides" class="menu-category">
-  <h2 class="menu-category-title">🔥 Seoul Sidekicks</h2>
-
-  <div class="menu-card">
-    <div class="menu-image-wrapper">
-      <button class="slider-arrow slider-arrow--left">&lt;</button>
-
-        <img 
-        src="src/sides/egg.png" 
-        alt="sides" 
-        class="menu-image"
-        data-category="sides"
-        />
-
-      <button class="slider-arrow slider-arrow--right">&gt;</button>
-    </div>
-    <p class="menu-image-caption">Steamed Egg</p>
-  </div>
-</article>
-
-
-
-  <article id="drinks" class="menu-category">
-  <h2 class="menu-category-title">🔥 Drinks</h2>
-
-  <div class="menu-card">
-    <div class="menu-image-wrapper">
-      <button class="slider-arrow slider-arrow--left">&lt;</button>
-
-        <img 
-        src="src/drinks/soda.png" 
-        alt="sides" 
-        class="menu-image"
-        data-category="sides"
-        />
-
-      <button class="slider-arrow slider-arrow--right">&gt;</button>
-    </div>
-    <p class="menu-image-caption">Soft Drinks</p>
-  </div>
-</article>
-
-
-    </div>
-  </section>
-
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
