@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <style>
+.brand {
+  font-family: 'neon2', sans-serif;
+  font-weight: bold;
+}
+</style>
+
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seoul'd Out</title>
@@ -75,9 +84,39 @@
 
     </div>
 
+ <!-- Reviews / Testimonials -->
+<section id="reviews" class="section section-reviews">
+  <div class="container">
+    <h2 class="section-title">What people are saying</h2>
+    <p class="section-body">Real guests. Real heat. See what diners love about Seoul’dOut.</p>
+
+    <div class="reviews-wrap">
+      <button class="reviews-nav reviews-prev" aria-label="Previous reviews">‹</button>
+
+      <div class="reviews-view">
+        <div id="reviewsList" class="reviews-list" aria-live="polite">
+          <!-- JS will inject review cards here -->
+        </div>
+      </div>
+
+      <button class="reviews-nav reviews-next" aria-label="Next reviews">›</button>
+    </div>
+
+    <div class="reviews-cta">
+      <a href="mailto:andrewkimsvhs@gmail.com?subject=Review%20for%20SeouldOut" class="btn-primary">Write a review</a>
+    </div>
+  </div>
+</section>
+
+
       <div class="gallery-cta">
         <a href="#reservations" class="btn-primary">Reservations</a>
       </div>
+
+
+
+
+
     </section>
 
     <section id="reservations" class="section section-location">
